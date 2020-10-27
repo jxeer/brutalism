@@ -1,0 +1,40 @@
+Questions:
+
+1. How do I make responsive images? #CSS
+2. How do I make responsive nav-bars / footers? #CSS
+3. How do I make it so the unordered list element in my nav bar is centered, but the bar itself takes up the width of the viewport? #CSS
+
+It seems like going into my HTML and wrapping the list in a div table, then going to the CSS and setting the display property of the div to 'table' centers the list, but also shortens the width of the nav-bar to the center of the page. When the only display property in my nav is the 'block' property on my list, the nav-bar takes up the whole bottom of the viewport. The point is for this nav-bar to be a footer to the webpage.
+
+Answers:
+
+3. So far, it seems like the solution might involve responsive web design. I put a metatag in the head of the HTML for mobile responsiveness. Then, I set the width of my table element to 95% of the viewport width. That definitely stretched out the nav-bar width, but also de-centered the link text...
+
+I could adjust the padding-right and make it really big? That seems hack-y but lets see.
+
+OK. I set the padding-left (because I reset the li float property to 'float:left') to 27vw (viewport width) and it seems to be centered. I like using vw and vh because rather than moving things relative to exact pixels that get warped if you adjust the size of the browser or view the page on another device, this moves it around relative to the viewport. So far so good.
+
+Notes:
+
+My Brutalism page features:
+
+0. HTML
+1. A functioning nav-bar in the footer
+2. Brutalist commandline art of Picard from Star Trek
+3. A little bit of JavaScript - Hello World in the Console.log and a little math function.
+4. CSS - background color, webfonts, nav-bar with background and hover effects.
+5. Responsive Web Design
+
+I looked up tips on:
+
+Google, of course
+MDN docs
+W3Schools
+CSS Tricks
+Sitepoint
+
+I also found out about a Dev podcast called ShopTalk!
+
+I worked on this page for about an hour, and found a solution to my challenge. I also realized I could clean up the Carla page by implementing box-model logic to make the gallery neater - perhaps by defining the margin, border and padding properties of the div the images are contained within. Also, defining sizing perhaps in CSS rather than in the HTML code, using vw (viewport width) and vh (viewport height). Get in the habit of continuously refactoring the code of past micro-projects as I learn more.
+
+BUILD, BUILD, BUILD!

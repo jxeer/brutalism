@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+  color: pink;
+  font-family: 'Courier Prime', monospace;
+}
+
+h1 {
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: pink;
+}
+
+.table {
+  display: table;
+  margin: 0 auto;
+  width: 98vw;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 20px;
+  margin-bottom: 0;
+  padding: 0;
+  padding-left: 27vw;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  text-align: center;
+  padding: 16px;
+}
+
+li a:hover {
+  background-color: #111111;
+}
